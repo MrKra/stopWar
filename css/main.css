@@ -244,21 +244,21 @@ a:focus{
 	width: 100%;
 	height: 100%;
 }
-.news-card .news-tags,
-.news-card-line .news-tags{
+.news-card .news-category,
+.news-card-line .news-category{
 	position: absolute;
 	bottom: 0;
 	left: 0;
 }
-.news-card .news-tags a,
-.news-card-line .news-tags a{
+.news-card .news-category a,
+.news-card-line .news-category a{
     margin: 5px;
     padding: 5px 10px;
 	font-size: 12px;
     background: rgba(255, 255, 255, 1.00);
 }
-.news-card .news-tags a i,
-.news-card-line .news-tags a i{
+.news-card .news-category a i,
+.news-card-line .news-category a i{
 	margin-right: 5px;
 	font-size: 12px;
 }
@@ -281,8 +281,8 @@ a:focus{
 }
 .news-card .news-title h3:hover a,
 .news-card-line .news-title h3:hover a,
-.news-card .news-tags a:hover,
-.news-card-line .news-tags a:hover{
+.news-card .news-category a:hover,
+.news-card-line .news-category a:hover{
 	color: rgba(255,30,0,0.95);
 }
 .news-card .news-meta,
@@ -443,10 +443,10 @@ a:focus{
 }
 .news-card-line .news-title h3,
 .news-card-line .news-title h3 a{
-	font-size: 30px;
+	font-size: 24px;
 }
 .news-card-line .news-text p{
-	font-size: 18px;
+	font-size: 16px;
 }
 
 /**  ON Block Sidebar **/

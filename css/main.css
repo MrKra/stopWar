@@ -48,6 +48,9 @@ a:focus{
 	cursor: default;
 	font-size: 28px;
 }
+.section .archive{
+	padding-top: 20px;
+}
 .col-title{
 	overflow: hidden;
 	text-transform: uppercase;
@@ -87,6 +90,21 @@ a:focus{
 .news-rotator{
 	padding-bottom: 20px;
 }
+.archive-page{
+	margin-top: 25px;
+}
+.archive-page-title{
+	margin: 0;
+	padding: 10px 0;
+	display: block;
+	font-size: 24px;
+	font-weight: 600;
+	color: rgba(0,0,0,1.00);
+	cursor: default;
+}
+.archive-page-title span{
+	color: rgba(255,30,0,1.00);
+}
 
 /** ON Styles Block Header **/
 .header,
@@ -96,7 +114,8 @@ a:focus{
 #content,
 .post-nav,
 .post-comments,
-.post-popular{
+.post-popular,
+.archive-page{
 	background: rgba(255,255,255,1.00);
 	box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.25);
 }
@@ -737,6 +756,7 @@ a:focus{
 	margin: 0;
 	margin-bottom: 10px;
 	padding: 0;
+	padding-left: 10px;
 	padding-right: 30px;
 }
 #comments .comments-list,
@@ -982,7 +1002,8 @@ a:focus{
 	font-size: 16px;
 	color: rgba(23,23,23,0.95);
 }
-#sidebar .widget-tags{
+#sidebar .widget-tags,
+#sidebar .widget-text{
 	margin: 0;
 	padding: 0;
 }
@@ -1000,6 +1021,17 @@ a:focus{
 }
 #sidebar .widget-tags a:hover{
 	color: rgba(248,28,0,0.95);
+}
+#sidebar .widget-text p{
+	margin: 0;
+	margin-bottom: 5px;
+	padding: 0;
+	font-size: 14px;
+	font-weight: 500;
+	text-align: left;
+	line-height: 1.4;
+	color: rgba(71,71,71,1.00);
+	cursor: default;
 }
 
 /**  ON Block Pagination **/

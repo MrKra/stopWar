@@ -718,6 +718,143 @@ a:focus{
 	justify-content: flex-end;
 }
 
+/** ON Block Comments **/
+.post-comments{
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 20px;
+}
+.post-comments .section-title,
+.post-popular .section-title{
+	margin: 0;
+    margin-bottom: 30px;
+    padding: 0;
+    padding-top: 20px;
+}
+
+#comments{
+	margin: 0;
+	margin-bottom: 10px;
+	padding: 0;
+	padding-right: 30px;
+}
+#comments .comments-list,
+#comments .comments-list-tree{
+	display: block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+#comments .comments-list-tree{
+	margin: 10px 0;
+	padding-left: 35px;
+}
+#comments .comments-list-item{
+	display: block;
+    margin: 0;
+    padding: 0;
+}
+#comments .commet-item{   
+    font-size: 14px;
+    padding-left: 50px;
+    position: relative;
+    min-height: 40px;
+}
+#comments .comment-icon{
+	position: absolute;
+    left: 0;
+    top: 0;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 50%;
+}
+#comments .comment-meta,
+#comments .comment-rating{
+	margin: 0;
+	margin-bottom: 5px;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+    align-items: center;
+}
+#comments .comment-meta span{
+	margin-right: 20px;
+}
+#comments .comment-meta i{
+	margin-right: 5px;
+	font-size: 14px;
+	font-weight: 500;
+	color: rgba(45,45,45,1.00);
+}  
+#comments .comment-text{
+	margin: 0;
+	margin-bottom: 5px;
+	padding: 0;
+}
+#comments .comment-text p{
+	margin: 0;
+	margin-bottom: 10px;
+	padding: 0;
+	line-height: 1.4;
+	font-size: 14px;
+	font-weight: 500;
+	text-align: left;
+	color: rgba(14,14,14,1.00);
+}
+#comments .comment-text p:last-child{
+	margin-bottom: 0;
+}
+#comments .comment-respons{
+	margin: 0;
+	padding: 0;
+	font-size: 12px;
+	font-weight: 500;
+	text-transform: uppercase;
+	text-decoration: underline;
+	color: rgba(255, 30, 0, 1.00);
+}
+#comments .comment-respons:hover{
+	color: rgba(26,26,26,1.00);
+	text-decoration: underline;
+}
+#comments .comment-rating .com-rat{
+	margin: 0;
+	margin-right: 30px;
+	padding: 0;
+}
+#comments .comment-rating .com-rat a,
+#comments .comment-rating .com-rat span{
+	margin-right: 5px;
+	padding: 0;
+}
+#comments .comment-rating .com-rat span{
+	font-size: 15px;
+	font-weight: 600;
+	color: rgba(45,45,45,1.00);
+}
+#comments .comment-rating .com-rat i{
+	font-size: 18px;
+	font-weight: 500;
+	color: rgba(45,45,45,1.00);
+}
+#comments .comment-rating .com-rat span.ratingplus{
+	color: rgba(3,85,0,1.00);
+}
+#comments .comment-rating .com-rat span.ratingminus{
+	color: rgba(142,0,2,1.00);
+}
+#comments .comment-rating .com-rat a:hover i{
+	color: rgba(255, 30, 0, 1.00);
+}
+
 /** ON Block Form Comments **/
 #form-comment .comment-input{
 	margin: 15px 0 10px 0;
@@ -736,18 +873,11 @@ a:focus{
 	text-transform: uppercase;
 }
 
-/** ON Block Post Comments **/
-.post-comments{
-	display: flex;
-	flex-wrap: wrap;
-	margin-bottom: 20px;
-}
-
 /** ON Block Post Popular **/
 .post-popular{
 	margin: 0;
     margin-bottom: 20px;
-    padding: 15px;
+    padding: 0 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;

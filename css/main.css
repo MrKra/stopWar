@@ -92,7 +92,8 @@ a:focus{
 .header,
 .breadcrumbs,
 .pagination,
-#content{
+#content,
+.post-nav{
 	background: rgba(255,255,255,1.00);
 	box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.25);
 }
@@ -599,6 +600,105 @@ a:focus{
 #content .post-tags{
 	margin-bottom: 20px;
 	padding: 0 80px;
+}
+
+/** ON Block Post Navigation ***/
+.post-nav{
+	margin-bottom: 20px;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+	align-items: center;
+    position: relative;
+}
+.post-nav::before{
+	position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    content: '';
+    width: 1px;
+    height: 50%;
+    background-color: rgba(0,0,0,0.3);
+    left: 50%;
+}
+.post-nav .post-prev, 
+.post-nav .post-next{
+    flex-basis: 50%;
+}
+.post-nav .post-prev-link,
+.post-nav .post-next-link{
+	display: block;
+	overflow: hidden;
+}
+.post-nav .post-nav-img,
+.post-nav .post-nav-img{
+	margin: 0;
+	padding: 0;
+	width: 35%;
+    height: 150px;
+	position: relative;
+}
+.post-nav .post-prev-link .post-nav-img{
+	margin-right: 20px;
+	float: left;
+}
+.post-nav .post-next-link .post-nav-img{
+	margin-left: 20px;
+	float: right;
+}
+.post-nav .post-prev-link i,
+.post-nav .post-next-link i{
+	position: absolute;
+	top: 35%;
+	font-size: 50px;
+	opacity: 0.05;
+}
+.post-nav .post-prev-link i{
+	left: 6%;
+}
+.post-nav .post-next-link i{
+	right: 6%;
+}
+.post-nav .post-prev-link:hover i,
+.post-nav .post-next-link:hover i{
+	opacity: 0.95;
+}
+.post-nav .post-nav-meta{
+	margin: 20px 0 8px 0;
+	display: block;
+	font-size: 15px;
+	text-transform: uppercase;
+	color: rgba(83,83,83,0.95);
+}
+.post-nav .post-nav-title{
+	display: block;
+	font-size: 18px;
+	text-transform: uppercase;
+	color: rgba(0,0,0,1.00);
+}
+.post-prev-link .post-nav-title{
+	margin-right: 20px;
+}
+.post-next-link .post-nav-title{
+	margin-left: 20px;
+}
+.post-nav .post-prev-link:hover .post-nav-title,
+.post-nav .post-next-link:hover .post-nav-title{
+	color: rgba(255,30,0,1.00);
+}
+.post-nav .post-nav-meta,
+.post-nav .post-nav-title{
+	display: flex;
+    align-items: center;
+}
+.post-nav .post-prev-link .post-nav-meta,
+.post-nav .post-prev-link .post-nav-title{
+	justify-content: flex-start;
+}
+.post-nav .post-next-link .post-nav-meta,
+.post-nav .post-next-link .post-nav-title{
+	justify-content: flex-end;
 }
 
 /**  ON Block Sidebar **/

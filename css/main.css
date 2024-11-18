@@ -139,7 +139,8 @@ a:focus{
 	border-radius: 6px;
 	width: 310px;
 }
-.header .main-search .btn-primary{
+.header .main-search .btn-primary,
+#form-comment .btn-primary{
 	background-color: rgba(255,30,0,0.95);
 }
 .header .main-search .form-control:focus{
@@ -717,13 +718,29 @@ a:focus{
 	justify-content: flex-end;
 }
 
+/** ON Block Form Comments **/
+#form-comment .comment-input{
+	margin: 15px 0 10px 0;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+#form-comment .form-outline{
+	flex-basis: 45%;
+}
+#form-comment .accordion-button{
+	padding: 5px 10px 10px 10px;
+	font-size: 12px;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
 /** ON Block Post Comments **/
 .post-comments{
 	display: flex;
 	flex-wrap: wrap;
 	margin-bottom: 20px;
-	background: rgba(255, 255, 255, 1.00);
-    box-shadow: 0 1px 2px 0 rgba(0, 1, 1, 0.15);
 }
 
 /** ON Block Post Popular **/

@@ -362,6 +362,9 @@ a:focus{
 }
 
 /** ON Block News Rotator Modul Carusel **/
+#news-rotator .news-card{
+	margin: 0 15px 25px 15px;
+}
 #news-rotator .slick-dots{
 	text-align: right;
 	bottom: -28px;

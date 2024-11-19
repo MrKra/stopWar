@@ -42,7 +42,7 @@ a:focus{
 	padding-top: 20px;
 	overflow: hidden;
 	text-transform: uppercase;
-	margin-bottom: 30px;
+	margin-bottom: 10px;
 	text-align: center;
 	color: rgba(0,0,0,1.00);
 	cursor: default;
@@ -83,7 +83,7 @@ a:focus{
 	content: "";
 	display: inline-block;
 	vertical-align: middle;
-	width: 90%;
+	width: 100%;
 	height: 1px;
 	background: rgba(0,0,0,0.15);
 }
@@ -417,7 +417,7 @@ a:focus{
 
 /**  ON Block News List **/
 .news-list{
-	margin: 0 15px;
+	margin: 0;
 	padding: 0;
 	list-style: none;
 }

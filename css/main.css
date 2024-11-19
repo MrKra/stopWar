@@ -160,12 +160,13 @@ a:focus{
 	width: 310px;
 }
 .header .main-search .btn-primary,
-#form-comment .btn-primary{
+#form-comment .btn-primary,
+.page-404 .btn-home-page{
 	background-color: rgba(255,30,0,0.95);
 }
 .header .main-search .form-control:focus{
 	border-color: rgba(255,30,0,0.85);
-    box-shadow: inset 0px 0px 0px 1px rgba(255,30,0,0.95);
+    box-shadow: inset 0 0 0 1px rgba(255,30,0,0.95);
 }
 
 /** ON Styles Block Main Slider **/
@@ -234,7 +235,6 @@ a:focus{
 #main-slider .slid-detail p{
 	display: block;
 	padding: 0;
-	margin: 0;
 	margin-bottom: 5px;
 	font-size: 18px;
 	font-weight: 500;
@@ -245,9 +245,8 @@ a:focus{
 
 /** ON Styles Block News Card **/
 .news-card{
-	margin: 0 15px;
+	margin: 15px 0;
 	padding: 15px;
-	margin-bottom: 25px;
 	box-shadow: 0 3px 6px rgba(0,0,0,0.15);
 	transition: all 0.3s;
 	position: relative;
@@ -896,7 +895,6 @@ a:focus{
 
 /** ON Block Post Popular **/
 .post-popular{
-	margin: 0;
     margin-bottom: 20px;
     padding: 0 20px;
     display: flex;
@@ -917,8 +915,6 @@ a:focus{
     left: 50%;
 }
 .popular-card{
-	margin: 0;
-    padding: 0;
     margin-bottom: 20px;
 	padding-right: 20px;
     flex-basis: 48%;
@@ -928,7 +924,6 @@ a:focus{
 }
 .popular-card .popular-card-title, 
 .popular-card .popular-card-text{
-    margin: 0;
     margin-left: 37.5%;
 }
 .popular-card .popular-card-title h3,
@@ -956,12 +951,10 @@ a:focus{
 
 /**  ON Block Sidebar **/
 #sidebar .widget{
-	margin: 0;
 	margin-bottom: 30px;
 	padding: 20px;
 }
 #sidebar .widget-title{
-	margin: 0;
 	margin-bottom: 10px;
 	padding: 0;
 	display: block;
@@ -1008,9 +1001,7 @@ a:focus{
 	padding: 0;
 }
 #sidebar .widget-tags a{
-	margin: 0;
-	margin-right: 8px;
-	margin-bottom: 8px;
+	margin: 0 8px 8px 0;
 	padding: 5px 10px;
 	font-size: 12px;
 	color: rgba(23,23,23,0.95); 
@@ -1023,8 +1014,7 @@ a:focus{
 	color: rgba(248,28,0,0.95);
 }
 #sidebar .widget-text p{
-	margin: 0;
-	margin-bottom: 5px;
+	margin: 0 0 5px 0;
 	padding: 0;
 	font-size: 14px;
 	font-weight: 500;
@@ -1056,6 +1046,50 @@ a:focus{
 	border-radius: 0;
 }
 
+/**  ON Block 404 Pege not found **/
+.page-404{
+	margin: 0;
+	padding: 50px 120px;
+}
+.page-404 h2{
+	margin-bottom: 10px;
+	font-size: 32px;
+	font-weight: 600;
+	text-transform: uppercase;
+	color: rgba(255,30,0,0.95);
+}
+.page-404 span,
+.page-404 p{
+	font-size: 26px;
+	font-weight: 500;
+	text-transform: uppercase;
+	color: rgba(0,0,0,0.95);
+}
+.page-404 p{
+	margin: 10px 0;
+	font-size: 16px;
+	line-height: 1.4;
+}
+.page-404 p > a{
+	font-size: 16px;
+	color: rgba(255,30,0,0.95);
+}
+.page-404 a:hover{
+	font-size: 16px;
+	color: rgba(0,0,0,0.95);
+}
+.page-404 .btn-primary{
+	margin: 10px 0;
+	font-size: 16px;
+	border-bottom: 0;
+	color: rgba(255,255,255,1);
+}
+.page-404 .btn-primary:hover,
+.page-404 .btn-primary:focus{
+	color: rgba(255,255,255,1);
+	background: rgba(255,30,0,0.95);
+}
+
 /**  ON Block Footer **/
 .footer{
     padding: 0;
@@ -1082,9 +1116,8 @@ a:focus{
 	border-top: 1px solid rgba(0, 0, 0, 0.15);
 }
 .footer-nav a{
-	margin: 0;
-	margin-right: 15px;
-	padding: 0;
+	margin: 0 15px 0 0;
+	padding: 5px 0;
 	font-size: 14px;
 	font-weight: 600;
 	text-align: center;

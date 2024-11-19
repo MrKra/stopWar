@@ -88,7 +88,7 @@ a:focus{
 	background: rgba(0,0,0,0.15);
 }
 .news-rotator{
-	padding-bottom: 20px;
+	padding-bottom: 15px;
 }
 .archive-page{
 	margin-top: 25px;
@@ -363,12 +363,12 @@ a:focus{
 
 /** ON Block News Rotator Modul Carusel **/
 #news-rotator .news-card{
-	margin: 0 15px 25px 15px;
+	margin: 0 15px 20px 15px;
 }
 #news-rotator .slick-dots{
 	text-align: right;
 	bottom: -28px;
-	width: 92%;
+	width: 90%;
 }
 #news-rotator .slick-dots li button::before{
 	content: "\f192";

@@ -70,11 +70,15 @@ a:focus{
 /** ON Header **/
 .header,
 .footer,
-.main-slider{
+.breadcrumbs,
+.main-slider,
+.content,
+.widget{
 	background: rgba(255,255,255,0.95);
     box-shadow: 0 4px 12px 0 rgba(0,0,0,0.25);
 }
-.header .navbar{
+.header .navbar,
+.breadcrumbs .navbar{
 	box-shadow: none;
 }
 .header .navbar-collapse{
@@ -232,39 +236,46 @@ a:focus{
 .news-rotator .news-card{
 	margin: 0 15px 20px 15px;
 }
-.news-card{
+.news-card,
+.news-card-line{
 	margin: 15px;
 	padding: 15px;
 	box-shadow: 0 3px 6px rgba(0,0,0,0.15);
 	transition: all 0.3s;
 	position: relative;
 }
-.news-card:hover{
+.news-card:hover,
+.news-card-line:hover{
 	box-shadow: 0 4px 8px rgba(0,0,0,0.35);
 }
-.news-card .news-card-thumb{
+.news-card .news-card-thumb,
+.news-card-line .news-card-thumb{
 	margin: 0;
 	padding: 0;
 	height: 245px;
 	position: relative;
 }
-.news-card .news-card-thumb img{
+.news-card .news-card-thumb img,
+.news-card-line .news-card-thumb img{
 	display: block;
 	width: 100%;
 	height: 100%;
 }
-.news-card .news-card-category{
+.news-card .news-card-category,
+.news-card-line .news-card-category{
 	position: absolute;
 	bottom: 0;
 	left: 0;
 }
-.news-card .news-card-category a{
+.news-card .news-card-category a,
+.news-card-line .news-card-category a{
     margin: 5px;
     padding: 5px 10px;
 	font-size: 12px;
-    background: rgba(255, 255, 255, 1.00);
+    background: rgba(255,255,255,0.95);
 }
-.news-card .news-card-category i{
+.news-card .news-card-category i,
+.news-card-line .news-card-category i{
 	margin-right: 5px;
 	font-size: 12px;
 }
@@ -273,19 +284,23 @@ a:focus{
 	margin-top: 10px;
 }
 .news-card .news-card-title h3,
-.news-card .news-card-title a{
+.news-card .news-card-title a,
+.news-card-line .news-card-title h3,
+.news-card-line .news-card-title a{
 	display: block;
 	margin: 0;
 	padding: 0;
-	font-size: 24px;
+	font-size: 22px;
 	text-align: left;
 	cursor: pointer;
-	color: rgba(0,0,0,1.00);
+	color: rgba(0,0,0,0.95);
 }
-.news-card .news-card-title h3:hover a{
+.news-card .news-card-title h3:hover a,
+.news-card-line .news-card-title h3:hover a{
 	color: rgba(255,30,0,0.95);
 }
-.news-card .news-card-meta{
+.news-card .news-card-meta,
+.news-card-line .news-card-meta{
 	margin: 5px 0;
 	padding: 5px 0;
 	display: flex;
@@ -295,33 +310,162 @@ a:focus{
 	border-bottom: 1px solid rgba(0,0,0,0.15) 	
 }
 .news-card .news-card-meta a,
-.news-card .news-card-meta i{
+.news-card .news-card-meta i,
+.news-card-line .news-card-meta a,
+.news-card-line .news-card-meta i{
 	font-size: 16px;
 	font-weight: 600;
 }
-.news-card .news-card-meta a{
+.news-card .news-card-meta a,
+.news-card-line .news-card-meta a{
 	margin-right: 35px;
 }
-.news-card .news-card-meta i{
+.news-card .news-card-meta i,
+.news-card-line .news-card-meta i{
 	margin-right: 5px;
 }
 .news-card .news-card-text{
 	margin: 0;
 	padding: 0;
 }
-.news-card .news-card-text p{
+.news-card .news-card-text p,
+.news-card-line .news-card-text p{
 	font-size: 16px;
 	line-height: 1.5;
 	margin-bottom: 5px;
 	text-align: left;
 	cursor: default;
-	color: rgba(58,58,58,1.00);
+	color: rgba(58,58,58,0.95);
+}
+
+/** ON News Card Line **/
+.news-card-line{
+	margin: 15px 0;
+	overflow: hidden;
+}
+.news-card-line .news-card-thumb{
+	float: left;
+    width: 35%;
+    height: 220px;
+}
+.news-card-line .news-card-thumb img{
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+.news-card-line .news-card-title,
+.news-card-line .news-card-meta,
+.news-card-line .news-card-text{
+	margin-left: 36.5%;
+	padding: 0;
+}
+.news-card-line .news-card-text{
+	margin-top: 10px;
+}
+
+/** ON Sidebar **/
+.sidebar .widget{
+	margin: 0 0 25px 0;
+	padding: 10px;
+}
+.sidebar .widget.title{
+	margin-bottom: 10px;
+	padding: 0;
+	display: block;
+	font-size: 22px;
+	font-weight: 600;
+	color: rgba(0,0,0,0.95);
+	text-align: left;
+	text-transform: uppercase;
+	cursor: default;
+}
+.sidebar .widget-list,
+.sidebar .widget-sub-list{
+	margin: 0;
+	padding: 0;
+	display: block;
+	list-style: none;
+}
+.sidebar .widget-item,
+.sidebar .widget-sub-item{
+	margin: 0;
+	padding: 5px 0;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+.sidebar .widget-sub-item{
+	padding-left: 20px;
+}
+.sidebar .widget-item:last-child,
+.sidebar .widget-sub-item:last-child{
+	padding-bottom: 0;
+	border-bottom: none;
+}
+.sidebar .widget-link,
+.sidebar .widget-sub-link{
+	font-size: 14px;
+	font-weight: 500;
+	color: rgba(23,23,23,0.95);
+	transition: all .2s ease-in-out;
+}
+.sidebar .widget-link i.fa-solid,
+.sidebar .widget-sub-link i.fa-solid{
+	margin-right: 10px;
+}
+.sidebar .widget-link:hover,
+.sidebar .widget-sub-link:hover{
+	padding-left: 5px;
+	color: rgba(248,28,0,0.95);
+}
+.sidebar .widget p{
+	margin: 0 0 5px 0;
+	padding: 0;
+	font-size: 14px;
+	font-weight: 500;
+	text-align: left;
+	line-height: 1.5;
+	color: rgba(58,58,58,0.95);
+	cursor: default;
+}
+.sidebar .widget p:last-child{
+	margin-bottom: 0;
+}
+.sidebar .widget a.btn{
+	margin: 5px;
+	padding: 5px 10px;
+	font-size: 12px;
+	font-weight: 500;
+	color: rgba(23,23,23,0.95);
+}
+.sidebar .widget a.btn i.fa-solid{
+	margin-right: 5px;
+}
+.sidebar .widget a.btn:hover{
+	background-color: rgba(248,28,0,0.65);
+	color: rgba(255,255,255,0.95);
+}
+
+/** ON Content **/
+.content{
+}
+
+/** ON Breadcrumbs **/
+.breadcrumbs{
+	margin: 20px 0;
+}
+.breadcrumbs .navbar .breadcrumb-item,
+.breadcrumbs .navbar .breadcrumb-item a{
+	font-size: 14px;
+	color: rgba(58,58,58,0.95);
+}
+.breadcrumbs .navbar .breadcrumb-item:hover,
+.breadcrumbs .navbar .breadcrumb-item a:hover{
+	color: rgba(255,30,0,0.85);
 }
 
 /**  ON Footer **/
 .footer{
     padding: 0;
-    margin: 0;
+    margin: 25px 0 0 0;
 }
 .footer p{
 	margin: 0;

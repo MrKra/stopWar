@@ -3,382 +3,338 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Index</title>
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap">
-	<!-- Font Awesome -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-	<!--<link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css">-->
 	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
 	<link rel="stylesheet" type="text/css" href="slick/slick.css">
-	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css"/>
-	<!-- MDB -->
 	<link rel="stylesheet" type="text/css" href="css/mdb.min.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<link rel="stylesheet" type="text/css" href="css/media.css">
+	<title>Index</title>
 </head>
 <body>
+	
 	<div class="wrapper">
+		
 		<header class="header">
 			<div class="container">
 				<div class="row">
-					<div class="col">
-						<nav class="navbar navbar-expand-lg">
-							 <div class="container-fluid">
-								<a class="navbar-brand" href="#">StopWar</a>
-								<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Переключатель навигации">
-								  <span class="navbar-toggler-icon"></span>
-								</button>
-								<div class="collapse navbar-collapse" id="navbarSupportedContent">
-								  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-									<li class="nav-item">
-									  <a class="nav-link active" aria-current="page" href="#">Главная</a>
-									</li>
-									<li class="nav-item">
-									  <a class="nav-link" href="#">Страницы</a>
-									</li>
-									<li class="nav-item dropdown">
-									  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-										Фашисты
-									  </a>
-									  <ul class="dropdown-menu">
-										<li><a class="dropdown-item" href="#">Действие</a></li>
-										<li><a class="dropdown-item" href="#">Другое действие</a></li>
-										<li><hr class="dropdown-divider"></li>
-										<li><a class="dropdown-item" href="#">Что-то еще здесь</a></li>
-									  </ul>
-									</li>
-									<li class="nav-item dropdown">
-									  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-										Рубрики
-									  </a>
-									  <ul class="dropdown-menu">
-										<li><a class="dropdown-item" href="#">Действие</a></li>
-										<li><a class="dropdown-item" href="#">Другое действие</a></li>
-										<li><hr class="dropdown-divider"></li>
-										<li><a class="dropdown-item" href="#">Что-то еще здесь</a></li>
-									  </ul>
-									</li>
-								  </ul>
-								  <form class="d-flex main-search" role="search">
-									<!--<input class="form-control head-txt" type="search" placeholder="Поиск..." aria-label="Поиск...">
-									<button class="btn btn-outline-success head-btn" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>-->
-									  <div class="input-group">
-										  <div class="form-outline" data-mdb-input-init>
-											<input type="search" id="form1" class="form-control" />
-											<label class="form-label" for="form1">Поиск...</label>
-										  </div>
-										  <button type="button" class="btn btn-primary" data-mdb-ripple-init>
-											<i class="fas fa-search"></i>
-										  </button>
-									 </div>
-								  </form>
+					<nav class="navbar sticky-top navbar-expand-lg navbar-light">
+						<div class="container-fluid">
+						<a class="navbar-brand" href="#">StopWar</a>
+						<button
+								data-mdb-collapse-init
+								class="navbar-toggler"
+								type="button"
+								data-mdb-target="#navbarNav"
+								aria-controls="navbarNav"
+								aria-expanded="false"
+								aria-label="Toggle navigation">
+							<i class="fas fa-bars"></i>
+						</button>
+						<div class="collapse navbar-collapse" id="navbarNav">
+							<ul class="navbar-nav">
+								<li class="nav-item">
+									<a class="nav-link active" aria-current="page" href="#">Home</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">Features</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">Pricing</a>
+								</li>
+							</ul>
+							<form class="d-flex input-group w-auto justify-content-end">
+								<div class="input-group">
+									<div class="form-outline" data-mdb-input-init>
+										<input type="search" id="form1" class="form-control" />
+										<label class="form-label" for="form1">Поиск...</label>
+									</div>
+									<button type="button" class="btn btn-primary" data-mdb-ripple-init>
+										<i class="fas fa-search"></i>
+									</button>
 								</div>
-							</div>
-						</nav>
+							</form>
+						</div>
 					</div>
+				</nav>
 				</div>
 			</div>
 		</header><!-- OF Header -->
 		
 		<section class="section">
-			<div id="main-slider">
-				<div class="slid-item">
-					<img class="slid-img" src="img/news-img/s1.jpg" alt="">
-					<div class="slid-detail">
+			<div class="main-slider" id="main-slider">
+					
+				<div class="main-slider-item">
+					<img class="main-slider-img" src="img/slider/s1.jpg" alt="">
+					<div class="main-slider-detail">
 						<h5><a href="#" title="">The Fox – Redefine The Concept</a></h5>
 						<p>Justo fabulas singulis at pri, saepe luptatum mei an. Duo idque solet scribentur eu, natum iudico labore te eos, no utinam tibique nam. Viderer labitur nostrud et per, disputationi mediocritatem necessitatibus ex eam.</p>
 					</div>
-				</div>
-				<div class="slid-item">
-					<img class="slid-img" src="img/news-img/s2.jpg" alt="">
-					<div class="slid-detail">
-						<h5>The Fox – Redefine The Concept2</h5>
+				</div><!-- OF Slider Item -->
+					
+				<div class="main-slider-item">
+					<img class="main-slider-img" src="img/slider/s2.jpg" alt="">
+					<div class="main-slider-detail">
+						<h5><a href="#" title="">The Fox – Redefine The Concept 2</a></h5>
 						<p>Justo fabulas singulis at pri, saepe luptatum mei an. Duo idque solet scribentur eu, natum iudico labore te eos, no utinam tibique nam. Viderer labitur nostrud et per, disputationi mediocritatem necessitatibus ex eam.</p>
 					</div>
-				</div>
-				<div class="slid-item">
-					<img class="slid-img" src="img/news-img/s3.jpg" alt="">
-					<div class="slid-detail">
-						<h5>The Fox – Redefine The Concept3</h5>
+				</div><!-- OF Slider Item -->
+					
+				<div class="main-slider-item">
+					<img class="main-slider-img" src="img/slider/s3.jpg" alt="">
+					<div class="main-slider-detail">
+						<h5><a href="#" title="">The Fox – Redefine The Concept 3</a></h5>
 						<p>Justo fabulas singulis at pri, saepe luptatum mei an. Duo idque solet scribentur eu, natum iudico labore te eos, no utinam tibique nam. Viderer labitur nostrud et per, disputationi mediocritatem necessitatibus ex eam.</p>
 					</div>
-				</div>
-				<div class="slid-item">
-					<img class="slid-img" src="img/news-img/s4.jpg" alt="">
-					<div class="slid-detail">
-						<h5>The Fox – Redefine The Concept4</h5>
-						<p>Justo fabulas singulis at pri, saepe luptatum mei an. Duo idque solet scribentur eu, natum iudico labore te eos, no utinam tibique nam. Viderer labitur nostrud et per, disputationi mediocritatem necessitatibus ex eam.</p>
-					</div>
-				</div>
-				<div class="slid-item">
-					<img class="slid-img" src="img/news-img/s5.jpg" alt="">
-					<div class="slid-detail">
-						<h5>The Fox – Redefine The Concept5</h5>
-						<p>Justo fabulas singulis at pri, saepe luptatum mei an. Duo idque solet scribentur eu, natum iudico labore te eos, no utinam tibique nam. Viderer labitur nostrud et per, disputationi mediocritatem necessitatibus ex eam.</p>
-					</div>
-				</div>
-			</div><!-- OF Block Main Slider -->
-		</section>
-		
-		<section class="section news-rotator">
-			<div class="container">
-				<div class="col-12"><h4 class="section-title">Главные новости</h4></div>
-				<div class="row">
-					<div id="news-rotator">
-
-						<div class="news-card">
-							<div class="news-thumb">
-								<img src="img/news-img/thumbs/img3.jpg" alt="">
-							</div>
-							<div class="news-title">
-								<h3><a href="#" title="">Masonry Gallery</a></h3>
-								<div class="news-meta">
-									<a href="" title=""><i class="fa-solid fa-circle-user"></i>StopRussianWars</a>
-									<a href="" title=""><i class="fa-solid fa-calendar-days"></i>12.05.2024</a>
-								</div>
-							</div>
-							<div class="news-text">
-								<p>Ei mei scripta intellegat. Verear voluptaria eam at, consul putent eu vel. Pro saepe maluisset ne, audire maiorum forensibus eos et. Diceret</p>
-							</div>
-						</div><!-- OF News Card -->
-
-						<div class="news-card">
-							<div class="news-thumb">
-								<img src="img/news-img/thumbs/img2.jpg" alt="">
-							</div>
-							<div class="news-title">
-								<h3><a href="#" title="">Masonry Gallery</a></h3>
-								<div class="news-meta">
-									<a href="" title=""><i class="fa-solid fa-circle-user"></i>admin</a>
-									<a href="" title=""><i class="fa-solid fa-calendar-days"></i>12.05.2024</a> 
-								</div>
-							</div>
-							<div class="news-text">
-								<p>Ei mei scripta intellegat. Verear voluptaria eam at, consul putent eu vel. Pro saepe maluisset ne, audire maiorum forensibus eos et. Diceret</p>
-							</div>
-						</div><!-- OF News Card -->
-
-						<div class="news-card">
-							<div class="news-thumb">
-								<img src="img/news-img/thumbs/img4.jpg" alt="">
-							</div>
-							<div class="news-title">
-								<h3><a href="#" title="">Masonry Gallery</a></h3>
-								<div class="news-meta">
-									<a href="" title=""><i class="fa-solid fa-circle-user"></i>admin</a>
-									<a href="" title=""><i class="fa-solid fa-calendar-days"></i>12.05.2024</a> 
-								</div>
-							</div>
-							<div class="news-text">
-								<p>Ei mei scripta intellegat. Verear voluptaria eam at, consul putent eu vel. Pro saepe maluisset ne, audire maiorum forensibus eos et. Diceret</p>
-							</div>
-						</div><!-- OF News Card -->
-
-						<div class="news-card">
-							<div class="news-thumb">
-								<img src="img/news-img/thumbs/img5.jpg" alt="">
-							</div>
-							<div class="news-title">
-								<h3><a href="#" title="">Masonry Gallery</a></h3>
-								<div class="news-meta">
-									<a href="" title=""><i class="fa-solid fa-circle-user"></i>StopRussianWars</a>
-									<a href="" title=""><i class="fa-solid fa-calendar-days"></i>12.05.2024</a>
-								</div>
-							</div>
-							<div class="news-text">
-								<p>Ei mei scripta intellegat. Verear voluptaria eam at, consul putent eu vel. Pro saepe maluisset ne, audire maiorum forensibus eos et. Diceret</p>
-							</div>
-						</div><!-- OF News Card -->
-
-						<div class="news-card">
-							<div class="news-thumb">
-								<img src="img/news-img/thumbs/img6.jpg" alt="">
-							</div>
-							<div class="news-title">
-								<h3><a href="#" title="">Masonry Gallery</a></h3>
-								<div class="news-meta">
-									<a href="" title=""><i class="fa-solid fa-circle-user"></i>StopRussianWars</a>
-									<a href="" title=""><i class="fa-solid fa-calendar-days"></i>12.05.2024</a>
-								</div>
-							</div>
-							<div class="news-text">
-								<p>Ei mei scripta intellegat. Verear voluptaria eam at, consul putent eu vel. Pro saepe maluisset ne, audire maiorum forensibus eos et. Diceret</p>
-							</div>
-						</div><!-- OF News Card -->
-
-					</div><!-- OF Block News Rotator-->
-				</div>
-			</div>
+				</div><!-- OF Slider Item -->
+					
+			</div><!--OF Main Slider -->
 		</section>
 		
 		<section class="section">
 			<div class="container">
-				<div class="col-12"><h4 class="section-title">Вот что творит россия</h4></div>
+				<div class="col-12">
+					<h4 class="section-title">Главные новости</h4>
+				</div>
 				<div class="row">
-
-					<div class="col-lg-4">
+					<div class="news-rotator" id="news-rotator">
+						
 						<div class="news-card">
-							<div class="news-thumb">
-								<img src="img/news-img/thumbs/img12.jpg" alt="">
-							</div>
-							<div class="news-title">
-								<h3><a href="#" title="">Masonry Gallery1</a></h3>
-								<div class="news-meta">
-									<a href="" title=""><i class="fa-solid fa-circle-user"></i>StopRussianWars</a>
-									<a href="" title=""><i class="fa-solid fa-calendar-days"></i>12.05.2024</a>
+							<div class="news-card-thumb">
+								<img src="img/thumbs/img5.jpg" alt="">
+								<div class="news-card-category">
+									<a class="btn btn-tag btn-rounded" data-mdb-close="true" href="#" title=""><i class="fa-solid fa-layer-group"></i>Война</a>
+									<a class="btn btn-tag btn-rounded" data-mdb-close="true" href="#" title=""><i class="fa-solid fa-layer-group"></i>Украина</a>
+									<a class="btn btn-tag btn-rounded" data-mdb-close="true" href="#" title=""><i class="fa-solid fa-layer-group"></i>Днепр</a>
 								</div>
 							</div>
-							<div class="news-text">
-								<p>Ei mei scripta intellegat. Verear voluptaria eam at, consul putent eu vel. Pro saepe maluisset ne, audire maiorum forensibus eos et. Diceret</p>
+							<div class="news-card-title">
+								<h3><a href="#" title="">Masonry Gallery</a></h3>
 							</div>
-						</div>
-					</div><!-- OF News Card -->
-
-					<div class="col-lg-4">
+							<div class="news-card-meta">
+								<a href="" title=""><i class="fa-solid fa-circle-user"></i>StopRussianWars</a>
+								<a href="" title=""><i class="fa-solid fa-calendar-days"></i>12.05.2024</a>
+							</div>
+							<div class="news-card-text">
+								<p>Ei mei scripta intellegat. Verear voluptaria eam at, consul putent eu vel. Pro saepe maluisset ne, audire maiorum forensibus eos et.</p>
+							</div>
+						</div><!-- OF News Card-->
+						
 						<div class="news-card">
-							<div class="news-thumb">
-								<img src="img/news-img/thumbs/img2.jpg" alt="">
-							</div>
-							<div class="news-title">
-								<h3><a href="#" title="">Masonry Gallery2</a></h3>
-								<div class="news-meta">
-									<a href="" title=""><i class="fa-solid fa-circle-user"></i>StopRussianWars</a>
-									<a href="" title=""><i class="fa-solid fa-calendar-days"></i>12.05.2024</a>
+							<div class="news-card-thumb">
+								<img src="img/thumbs/img3.jpg" alt="">
+								<div class="news-card-category">
+									<a class="btn btn-tag btn-rounded" data-mdb-close="true" href="#" title=""><i class="fa-solid fa-layer-group"></i>Война</a>
+									<a class="btn btn-tag btn-rounded" data-mdb-close="true" href="#" title=""><i class="fa-solid fa-layer-group"></i>Украина</a>
+									<a class="btn btn-tag btn-rounded" data-mdb-close="true" href="#" title=""><i class="fa-solid fa-layer-group"></i>Днепр</a>
 								</div>
 							</div>
-							<div class="news-text">
-								<p>Ei mei scripta intellegat. Verear voluptaria eam at, consul putent eu vel. Pro saepe maluisset ne, audire maiorum forensibus eos et. Diceret</p>
+							<div class="news-card-title">
+								<h3><a href="#" title="">Masonry Gallery</a></h3>
 							</div>
-						</div>
-					</div><!-- OF News Card -->
-
-					<div class="col-lg-4">
+							<div class="news-card-meta">
+								<a href="" title=""><i class="fa-solid fa-circle-user"></i>StopRussianWars</a>
+								<a href="" title=""><i class="fa-solid fa-calendar-days"></i>12.05.2024</a>
+							</div>
+							<div class="news-card-text">
+								<p>Ei mei scripta intellegat. Verear voluptaria eam at, consul putent eu vel. Pro saepe maluisset ne, audire maiorum forensibus eos et.</p>
+							</div>
+						</div><!-- OF News Card-->
+						
 						<div class="news-card">
-							<div class="news-thumb">
-								<img src="img/news-img/thumbs/img3.jpg" alt="">
-							</div>
-							<div class="news-title">
-								<h3><a href="#" title="">Masonry Gallery3</a></h3>
-								<div class="news-meta">
-									<a href="" title=""><i class="fa-solid fa-circle-user"></i>StopRussianWars</a>
-									<a href="" title=""><i class="fa-solid fa-calendar-days"></i>12.05.2024</a>
+							<div class="news-card-thumb">
+								<img src="img/thumbs/img6.jpg" alt="">
+								<div class="news-card-category">
+									<a class="btn btn-tag btn-rounded" data-mdb-close="true" href="#" title=""><i class="fa-solid fa-layer-group"></i>Война</a>
+									<a class="btn btn-tag btn-rounded" data-mdb-close="true" href="#" title=""><i class="fa-solid fa-layer-group"></i>Украина</a>
+									<a class="btn btn-tag btn-rounded" data-mdb-close="true" href="#" title=""><i class="fa-solid fa-layer-group"></i>Днепр</a>
 								</div>
 							</div>
-							<div class="news-text">
-								<p>Ei mei scripta intellegat. Verear voluptaria eam at, consul putent eu vel. Pro saepe maluisset ne, audire maiorum forensibus eos et. Diceret</p>
+							<div class="news-card-title">
+								<h3><a href="#" title="">Masonry Gallery</a></h3>
 							</div>
-						</div>
-					</div><!-- OF News Card -->
-
-					<div class="col-lg-4">
+							<div class="news-card-meta">
+								<a href="" title=""><i class="fa-solid fa-circle-user"></i>StopRussianWars</a>
+								<a href="" title=""><i class="fa-solid fa-calendar-days"></i>12.05.2024</a>
+							</div>
+							<div class="news-card-text">
+								<p>Ei mei scripta intellegat. Verear voluptaria eam at, consul putent eu vel. Pro saepe maluisset ne, audire maiorum forensibus eos et.</p>
+							</div>
+						</div><!-- OF News Card-->
+						
 						<div class="news-card">
-							<div class="news-thumb">
-								<img src="img/no-img.jpg" alt="">
-							</div>
-							<div class="news-title">
-								<h3><a href="#" title="">Masonry Gallery4</a></h3>
-								<div class="news-meta">
-									<a href="" title=""><i class="fa-solid fa-circle-user"></i>StopRussianWars</a>
-									<a href="" title=""><i class="fa-solid fa-calendar-days"></i>12.05.2024</a>
+							<div class="news-card-thumb">
+								<img src="img/thumbs/img2.jpg" alt="">
+								<div class="news-card-category">
+									<a class="btn btn-tag btn-rounded" data-mdb-close="true" href="#" title=""><i class="fa-solid fa-layer-group"></i>Война</a>
+									<a class="btn btn-tag btn-rounded" data-mdb-close="true" href="#" title=""><i class="fa-solid fa-layer-group"></i>Украина</a>
+									<a class="btn btn-tag btn-rounded" data-mdb-close="true" href="#" title=""><i class="fa-solid fa-layer-group"></i>Днепр</a>
 								</div>
 							</div>
-							<div class="news-text">
-								<p>Ei mei scripta intellegat. Verear voluptaria eam at, consul putent eu vel. Pro saepe maluisset ne, audire maiorum forensibus eos et. Diceret</p>
+							<div class="news-card-title">
+								<h3><a href="#" title="">Masonry Gallery</a></h3>
 							</div>
-						</div>
-					</div><!-- OF News Card -->
-
-					<div class="col-lg-4">
-						<div class="news-card">
-							<div class="news-thumb">
-								<img src="img/news-img/thumbs/img5.jpg" alt="">
+							<div class="news-card-meta">
+								<a href="" title=""><i class="fa-solid fa-circle-user"></i>StopRussianWars</a>
+								<a href="" title=""><i class="fa-solid fa-calendar-days"></i>12.05.2024</a>
 							</div>
-							<div class="news-title">
-								<h3><a href="#" title="">Masonry Gallery5</a></h3>
-								<div class="news-meta">
-									<a href="" title=""><i class="fa-solid fa-circle-user"></i>StopRussianWars</a>
-									<a href="" title=""><i class="fa-solid fa-calendar-days"></i>12.05.2024</a>
-								</div>
+							<div class="news-card-text">
+								<p>Ei mei scripta intellegat. Verear voluptaria eam at, consul putent eu vel. Pro saepe maluisset ne, audire maiorum forensibus eos et.</p>
 							</div>
-							<div class="news-text">
-								<p>Ei mei scripta intellegat. Verear voluptaria eam at, consul putent eu vel. Pro saepe maluisset ne, audire maiorum forensibus eos et. Diceret</p>
-							</div>
-						</div>
-					</div><!-- OF News Card -->
-
-					<div class="col-lg-4">
-						<div class="news-card">
-							<div class="news-thumb">
-								<img src="img/news-img/thumbs/img6.jpg" alt="">
-							</div>
-							<div class="news-title">
-								<h3><a href="#" title="">Masonry Gallery6</a></h3>
-								<div class="news-meta">
-									<a href="" title=""><i class="fa-solid fa-circle-user"></i>StopRussianWars</a>
-									<a href="" title=""><i class="fa-solid fa-calendar-days"></i>12.05.2024</a>
-								</div>
-							</div>
-							<div class="news-text">
-								<p>Ei mei scripta intellegat. Verear voluptaria eam at, consul putent eu vel. Pro saepe maluisset ne, audire maiorum forensibus eos et. Diceret</p>
-							</div>
-						</div>
-					</div><!-- OF News Card -->
-
-				</div><!-- <!-- OF Block News Card -->
-			</div>
+						</div><!-- OF News Card-->
+						
+					</div>
+				</div>
+			</div><!-- OF News Rotator -->
 		</section>
 		
 		<section class="section">
 			<div class="container">
-				<div class="col-12"><h4 class="section-title">Тем Временем в России</h4></div>
-			<div class="row">
-				
-				<div class="col-lg-3">
-					<div class="col-12"><h4 class="col-title">Политика</h4></div>
-					<ul class="news-list">
-						<li class="news-list-item"><a href="" title="">Песков назвал длительность разговора Путина и Шольца</a></li>
-						<li class="news-list-item"><a href="" title="">Сергей Лавров возглавит российскую делегацию на саммите G20 в Бразилии</a></li>
-						<li class="news-list-item"><a href="" title="">Захарова назвала цинизмом слова Туска об Украине</a></li>
-						<li class="news-list-item"><a href="" title="">Состоялся телефонный разговор президентов России и Азербайджана</a></li>
-						<li class="news-list-item"><a href="" title="">Владимир Путин и Олаф Шольц обменялись мнениями по ситуации на Украине</a></li>
-					</ul>
+				<div class="col-12">
+					<h4 class="section-title">Вот что творит россия</h4>
 				</div>
-				
-				<div class="col-lg-3">
-					<div class="col-12"><h4 class="col-title">Социалка</h4></div>
-					<ul class="news-list">
-						<li class="news-list-item"><a href="" title="">Дворник оказался самой дефицитной специальностью в России</a></li>
-						<li class="news-list-item"><a href="" title="">Отель «Корпоративный центр Сбербанка» признан лучшим горнолыжным курортом на Юге России</a></li>
-						<li class="news-list-item"><a href="" title="">Белорусов заверили в сохранении пенсионного возраста</a></li>
-						<li class="news-list-item"><a href="" title="">Россиянам дали советы по выгодным покупкам к Новому году</a></li>
-						<li class="news-list-item"><a href="" title="">Раскрыт минимальный коэффициент для выхода на пенсию в 2025 году</a></li>
-					</ul>
-				</div>
+				<div class="row">
 					
-				<div class="col-lg-3">
-					<div class="col-12"><h4 class="col-title">Медицина</h4></div>
-					<ul class="news-list">
-						<li class="news-list-item"><a href="" title="">В Новочебоксарске число заболевших после обеда в столовой выросло до 205</a></li>
-						<li class="news-list-item"><a href="" title="">Минздрав: Устойчивость к противомикробным препаратам - биологическая угроза</a></li>
-						<li class="news-list-item"><a href="" title="">Нижегородские врачи начали оперировать с помощью робота-хирурга</a></li>
-						<li class="news-list-item"><a href="" title="">Британские врачи придумали "калькулятор смерти", а мы - "счетчик долголетия"</a></li>
-						<li class="news-list-item"><a href="" title="">Чем заменить компоты: Врач Бокерия назвала продукты, вызывающие тромбы в сосудах</a></li>
-					</ul>
-				</div>
+					<div class="col-lg-4 col-md-6">
+						<div class="news-card">
+							<div class="news-card-thumb">
+								<img src="img/thumbs/img5.jpg" alt="">
+								<div class="news-card-category">
+									<a class="btn btn-tag btn-rounded" data-mdb-close="true" href="#" title=""><i class="fa-solid fa-layer-group"></i>Война</a>
+									<a class="btn btn-tag btn-rounded" data-mdb-close="true" href="#" title=""><i class="fa-solid fa-layer-group"></i>Украина</a>
+									<a class="btn btn-tag btn-rounded" data-mdb-close="true" href="#" title=""><i class="fa-solid fa-layer-group"></i>Днепр</a>
+								</div>
+							</div>
+							<div class="news-card-title">
+								<h3><a href="#" title="">Masonry Gallery</a></h3>
+							</div>
+							<div class="news-card-meta">
+								<a href="" title=""><i class="fa-solid fa-circle-user"></i>StopRussianWars</a>
+								<a href="" title=""><i class="fa-solid fa-calendar-days"></i>12.05.2024</a>
+							</div>
+							<div class="news-card-text">
+								<p>Ei mei scripta intellegat. Verear voluptaria eam at, consul putent eu vel. Pro saepe maluisset ne, audire maiorum forensibus eos et.</p>
+							</div>
+						</div>
+					</div><!-- OF News Card-->
 					
-				<div class="col-lg-3">
-					<div class="col-12"><h4 class="col-title">Наука</h4></div>
-					<ul class="news-list">
-						<li class="news-list-item"><a href="" title="">Российские ученые получили патент на прорывную технологию получения лития</a></li>
-						<li class="news-list-item"><a href="" title="">В Кронштадте финишировала экспедиция "По пути русских мореплавателей"</a></li>
-						<li class="news-list-item"><a href="" title="">Оригинальный способ борьбы с космическим мусором предложили российские ученые</a></li>
-						<li class="news-list-item"><a href="" title="">Уральские ученые разработали эффективный способ извлечения золота из руды</a></li>
-						<li class="news-list-item"><a href="" title="">ИИ не хватает "учебников": что мешает обучению нейросетей и сможет ли наука преодолеть этот барьер</a></li>
-					</ul>
+					<div class="col-lg-4 col-md-6">
+						<div class="news-card">
+							<div class="news-card-thumb">
+								<img src="img/thumbs/img5.jpg" alt="">
+								<div class="news-card-category">
+									<a class="btn btn-tag btn-rounded" data-mdb-close="true" href="#" title=""><i class="fa-solid fa-layer-group"></i>Война</a>
+									<a class="btn btn-tag btn-rounded" data-mdb-close="true" href="#" title=""><i class="fa-solid fa-layer-group"></i>Украина</a>
+									<a class="btn btn-tag btn-rounded" data-mdb-close="true" href="#" title=""><i class="fa-solid fa-layer-group"></i>Днепр</a>
+								</div>
+							</div>
+							<div class="news-card-title">
+								<h3><a href="#" title="">Masonry Gallery</a></h3>
+							</div>
+							<div class="news-card-meta">
+								<a href="" title=""><i class="fa-solid fa-circle-user"></i>StopRussianWars</a>
+								<a href="" title=""><i class="fa-solid fa-calendar-days"></i>12.05.2024</a>
+							</div>
+							<div class="news-card-text">
+								<p>Ei mei scripta intellegat. Verear voluptaria eam at, consul putent eu vel. Pro saepe maluisset ne, audire maiorum forensibus eos et.</p>
+							</div>
+						</div>
+					</div><!-- OF News Card-->
+					
+					<div class="col-lg-4 col-md-6">
+						<div class="news-card">
+							<div class="news-card-thumb">
+								<img src="img/thumbs/img5.jpg" alt="">
+								<div class="news-card-category">
+									<a class="btn btn-tag btn-rounded" data-mdb-close="true" href="#" title=""><i class="fa-solid fa-layer-group"></i>Война</a>
+									<a class="btn btn-tag btn-rounded" data-mdb-close="true" href="#" title=""><i class="fa-solid fa-layer-group"></i>Украина</a>
+									<a class="btn btn-tag btn-rounded" data-mdb-close="true" href="#" title=""><i class="fa-solid fa-layer-group"></i>Днепр</a>
+								</div>
+							</div>
+							<div class="news-card-title">
+								<h3><a href="#" title="">Masonry Gallery</a></h3>
+							</div>
+							<div class="news-card-meta">
+								<a href="" title=""><i class="fa-solid fa-circle-user"></i>StopRussianWars</a>
+								<a href="" title=""><i class="fa-solid fa-calendar-days"></i>12.05.2024</a>
+							</div>
+							<div class="news-card-text">
+								<p>Ei mei scripta intellegat. Verear voluptaria eam at, consul putent eu vel. Pro saepe maluisset ne, audire maiorum forensibus eos et.</p>
+							</div>
+						</div>
+					</div><!-- OF News Card-->
+					
+					<div class="col-lg-4 col-md-6">
+						<div class="news-card">
+							<div class="news-card-thumb">
+								<img src="img/thumbs/img5.jpg" alt="">
+								<div class="news-card-category">
+									<a class="btn btn-tag btn-rounded" data-mdb-close="true" href="#" title=""><i class="fa-solid fa-layer-group"></i>Война</a>
+									<a class="btn btn-tag btn-rounded" data-mdb-close="true" href="#" title=""><i class="fa-solid fa-layer-group"></i>Украина</a>
+									<a class="btn btn-tag btn-rounded" data-mdb-close="true" href="#" title=""><i class="fa-solid fa-layer-group"></i>Днепр</a>
+								</div>
+							</div>
+							<div class="news-card-title">
+								<h3><a href="#" title="">Masonry Gallery</a></h3>
+							</div>
+							<div class="news-card-meta">
+								<a href="" title=""><i class="fa-solid fa-circle-user"></i>StopRussianWars</a>
+								<a href="" title=""><i class="fa-solid fa-calendar-days"></i>12.05.2024</a>
+							</div>
+							<div class="news-card-text">
+								<p>Ei mei scripta intellegat. Verear voluptaria eam at, consul putent eu vel. Pro saepe maluisset ne, audire maiorum forensibus eos et.</p>
+							</div>
+						</div>
+					</div><!-- OF News Card-->
+					
+					<div class="col-lg-4 col-md-6">
+						<div class="news-card">
+							<div class="news-card-thumb">
+								<img src="img/thumbs/img5.jpg" alt="">
+								<div class="news-card-category">
+									<a class="btn btn-tag btn-rounded" data-mdb-close="true" href="#" title=""><i class="fa-solid fa-layer-group"></i>Война</a>
+									<a class="btn btn-tag btn-rounded" data-mdb-close="true" href="#" title=""><i class="fa-solid fa-layer-group"></i>Украина</a>
+									<a class="btn btn-tag btn-rounded" data-mdb-close="true" href="#" title=""><i class="fa-solid fa-layer-group"></i>Днепр</a>
+								</div>
+							</div>
+							<div class="news-card-title">
+								<h3><a href="#" title="">Masonry Gallery</a></h3>
+							</div>
+							<div class="news-card-meta">
+								<a href="" title=""><i class="fa-solid fa-circle-user"></i>StopRussianWars</a>
+								<a href="" title=""><i class="fa-solid fa-calendar-days"></i>12.05.2024</a>
+							</div>
+							<div class="news-card-text">
+								<p>Ei mei scripta intellegat. Verear voluptaria eam at, consul putent eu vel. Pro saepe maluisset ne, audire maiorum forensibus eos et.</p>
+							</div>
+						</div>
+					</div><!-- OF News Card-->
+					
+					<div class="col-lg-4 col-md-6">
+						<div class="news-card">
+							<div class="news-card-thumb">
+								<img src="img/thumbs/img5.jpg" alt="">
+								<div class="news-card-category">
+									<a class="btn btn-tag btn-rounded" data-mdb-close="true" href="#" title=""><i class="fa-solid fa-layer-group"></i>Война</a>
+									<a class="btn btn-tag btn-rounded" data-mdb-close="true" href="#" title=""><i class="fa-solid fa-layer-group"></i>Украина</a>
+									<a class="btn btn-tag btn-rounded" data-mdb-close="true" href="#" title=""><i class="fa-solid fa-layer-group"></i>Днепр</a>
+								</div>
+							</div>
+							<div class="news-card-title">
+								<h3><a href="#" title="">Masonry Gallery</a></h3>
+							</div>
+							<div class="news-card-meta">
+								<a href="" title=""><i class="fa-solid fa-circle-user"></i>StopRussianWars</a>
+								<a href="" title=""><i class="fa-solid fa-calendar-days"></i>12.05.2024</a>
+							</div>
+							<div class="news-card-text">
+								<p>Ei mei scripta intellegat. Verear voluptaria eam at, consul putent eu vel. Pro saepe maluisset ne, audire maiorum forensibus eos et.</p>
+							</div>
+						</div>
+					</div><!-- OF News Card-->
+					
 				</div>
-				
-			</div><!-- OF Block News List -->	
-			</div>
+			</div><!-- OF Block News -->
 		</section>
 		
 		<footer class="footer">
@@ -387,7 +343,7 @@
 					<div class="col-12">
 						<p>&copy; 2022 &ndash; 2024 Сайт создан в просветительских целях, а также для сохранения всех или большей части совершённой военных преступлений совершённый россией и ее вооружённые силы против Украины и украинского общества. Не забывайте, что совершила россия не забывайте агрессора нельзя задобрить или усмирить агрессор, боится только силы агрессора можно только ПОБЕДИТЬ</p>
 					</div>
-					<nav>
+					<nav class="footer-nav">
 						<a href="#" title="">Главная</a>
 						<a href="#" title="">Страницы</a>
 						<a href="#" title="">Рубрики</a>
@@ -395,13 +351,12 @@
 					</nav>
 				</div>
 			</div>
-		</footer>
-		
-	</div><!-- OF Wrapper -->
-	<script type="text/javascript" src="bootstrap/js/bootstrap.bundle.min.js"></script>
+		</footer><!-- OF Footer -->
+	
+	</div>
+	
 	<script type="text/javascript" src="js/jQuery-v3.js"></script>
 	<script type="text/javascript" src="slick/slick.min.js"></script>
-	<!-- MDB -->
 	<script type="text/javascript" src="js/mdb.umd.min.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 </body>
